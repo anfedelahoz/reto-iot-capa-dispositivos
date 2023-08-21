@@ -27,8 +27,6 @@ int V;
 int ilum;
 
 
-
-
 //Usuario uniandes sin @uniandes.edu.co
 #define HOSTNAME "your.user"
 
@@ -218,7 +216,7 @@ void loop()
     //Publica en el tópico de la luminosidad
     client.publish(MQTT_PUB_TOPIC3, payload3, false);
   }
-s
+
   //Imprime en el monitor serial la información recolectada
   Serial.print(MQTT_PUB_TOPIC1);
   Serial.print(" -> ");
